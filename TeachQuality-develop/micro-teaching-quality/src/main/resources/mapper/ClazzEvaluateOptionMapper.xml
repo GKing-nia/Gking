@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.ClazzEvaluateOptionMapper">
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.ClazzEvaluateOption">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="clazz_type" jdbcType="VARCHAR" property="clazzType"/>
+        <result column="first_target" jdbcType="VARCHAR" property="firstTarget"/>
+        <result column="detail" jdbcType="VARCHAR" property="detail"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, clazz_type, first_target, detail, create_time, update_time
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_evaluate_option
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectByClazzType" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_evaluate_option
+        where clazz_type = #{clazzType,jdbcType=VARCHAR}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from clazz_evaluate_option
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzEvaluateOption" useGeneratedKeys="true">
+        insert into clazz_evaluate_option (clazz_type, first_target, detail,
+                                           create_time, update_time)
+        values (#{clazzType,jdbcType=VARCHAR}, #{firstTarget,jdbcType=VARCHAR}, #{detail,jdbcType=VARCHAR},
+                #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzEvaluateOption" useGeneratedKeys="true">
+        insert into clazz_evaluate_option
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="clazzType != null">
+                clazz_type,
+            </if>
+            <if test="firstTarget != null">
+                first_target,
+            </if>
+            <if test="detail != null">
+                detail,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="clazzType != null">
+                #{clazzType,jdbcType=VARCHAR},
+            </if>
+            <if test="firstTarget != null">
+                #{firstTarget,jdbcType=VARCHAR},
+            </if>
+            <if test="detail != null">
+                #{detail,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzEvaluateOption">
+        update clazz_evaluate_option
+        <set>
+            <if test="clazzType != null">
+                clazz_type = #{clazzType,jdbcType=VARCHAR},
+            </if>
+            <if test="firstTarget != null">
+                first_target = #{firstTarget,jdbcType=VARCHAR},
+            </if>
+            <if test="detail != null">
+                detail = #{detail,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.ClazzEvaluateOption">
+        update clazz_evaluate_option
+        set clazz_type   = #{clazzType,jdbcType=VARCHAR},
+            first_target = #{firstTarget,jdbcType=VARCHAR},
+            detail       = #{detail,jdbcType=VARCHAR},
+            create_time  = #{createTime,jdbcType=TIMESTAMP},
+            update_time  = #{updateTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

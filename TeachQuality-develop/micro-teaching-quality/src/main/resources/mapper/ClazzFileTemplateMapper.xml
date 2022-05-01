@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.ClazzFileTemplateMapper">
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="clazz_college" jdbcType="VARCHAR" property="clazzCollege"/>
+        <result column="clazz_major" jdbcType="VARCHAR" property="clazzMajor"/>
+        <result column="clazz_type" jdbcType="VARCHAR" property="clazzType"/>
+        <result column="clazz_name" jdbcType="VARCHAR" property="clazzName"/>
+        <result column="path" jdbcType="VARCHAR" property="path"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, user_id, `name`, clazz_college, clazz_major, clazz_type, clazz_name, `path`,
+    create_time, update_time
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_file_template
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectByMajor" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_file_template
+        where clazz_major = #{clazzMajor,jdbcType=VARCHAR}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id,
+               user_id,
+               `name`,
+               clazz_college,
+               clazz_major,
+               clazz_type,
+               clazz_name,
+               `path`,
+               create_time,
+               update_time
+        from clazz_file_template
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from clazz_file_template
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate" useGeneratedKeys="true">
+        insert into clazz_file_template (user_id, `name`, clazz_college,
+                                         clazz_major, clazz_type, clazz_name,
+                                         `path`, create_time, update_time)
+        values (#{userId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{clazzCollege,jdbcType=VARCHAR},
+                #{clazzMajor,jdbcType=VARCHAR}, #{clazzType,jdbcType=VARCHAR}, #{clazzName,jdbcType=VARCHAR},
+                #{path,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate" useGeneratedKeys="true">
+        insert into clazz_file_template
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="name != null">
+                `name`,
+            </if>
+            <if test="clazzCollege != null">
+                clazz_college,
+            </if>
+            <if test="clazzMajor != null">
+                clazz_major,
+            </if>
+            <if test="clazzType != null">
+                clazz_type,
+            </if>
+            <if test="clazzName != null">
+                clazz_name,
+            </if>
+            <if test="path != null">
+                `path`,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzCollege != null">
+                #{clazzCollege,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzMajor != null">
+                #{clazzMajor,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzType != null">
+                #{clazzType,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzName != null">
+                #{clazzName,jdbcType=VARCHAR},
+            </if>
+            <if test="path != null">
+                #{path,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate">
+        update clazz_file_template
+        <set>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                `name` = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzCollege != null">
+                clazz_college = #{clazzCollege,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzMajor != null">
+                clazz_major = #{clazzMajor,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzType != null">
+                clazz_type = #{clazzType,jdbcType=VARCHAR},
+            </if>
+            <if test="clazzName != null">
+                clazz_name = #{clazzName,jdbcType=VARCHAR},
+            </if>
+            <if test="path != null">
+                `path` = #{path,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate">
+        update clazz_file_template
+        set user_id       = #{userId,jdbcType=INTEGER},
+            `name`        = #{name,jdbcType=VARCHAR},
+            clazz_college = #{clazzCollege,jdbcType=VARCHAR},
+            clazz_major   = #{clazzMajor,jdbcType=VARCHAR},
+            clazz_type    = #{clazzType,jdbcType=VARCHAR},
+            clazz_name    = #{clazzName,jdbcType=VARCHAR},
+            `path`        = #{path,jdbcType=VARCHAR},
+            create_time   = #{createTime,jdbcType=TIMESTAMP},
+            update_time   = #{updateTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <insert id="saveCourseReportTemplate" parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into clazz_file_template(user_id, name, path, create_time, update_time)
+        values (#{userId}, #{name}, #{path}, #{createTime}, #{updateTime})
+    </insert>
+
+    <select id="getCourseReportTemplate" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select name, path
+        from clazz_file_template
+        where id = #{id}
+    </select>
+
+    <update id="updateCourseReportTemplate"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzFileTemplate">
+        update clazz_file_template
+        set update_time = #{updateTime},
+            user_id     = #{userId},
+            path        = #{path},
+            name        = #{name}
+        where id = #{id}
+
+    </update>
+
+    <select id="countCourseReportTemplate" resultType="java.lang.Integer">
+        select count(*)
+        from clazz_file_template
+    </select>
+
+    <select id="listCourseReportTemplate" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_file_template
+        limit #{start}, #{size}
+    </select>
+</mapper>

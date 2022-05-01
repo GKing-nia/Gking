@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="user_pwd" jdbcType="VARCHAR" property="userPwd"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="user_type" jdbcType="VARCHAR" property="userType"/>
+        <result column="user_belong" jdbcType="VARCHAR" property="userBelong"/>
+        <result column="is_clazz" jdbcType="INTEGER" property="isClazz"/>
+        <result column="salt" jdbcType="VARCHAR" property="salt"/>
+    </resultMap>
+
+    <sql id="selectUserDO">
+        select u.id,
+               u.user_name,
+               u.user_pwd,
+               u.real_name,
+               u.user_type,
+               u.user_belong,
+               u.salt,
+               u.is_clazz,
+               u.create_time,
+               u.update_time
+        from user u
+    </sql>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from user
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <include refid="selectUserDO"/>
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        <include refid="selectUserDO"/>
+    </select>
+
+    <select id="selectByUserName" resultMap="BaseResultMap">
+        <include refid="selectUserDO"/>
+        where user_name = #{userName}
+    </select>
+
+    <insert id="insertUser" parameterType="com.vtmer.microteachingquality.model.entity.User">
+        insert into user (`user_name`, `user_pwd`, `real_name`, `user_type`, `user_belong`, `salt`, `is_clazz`)
+        values (#{userName}, #{userPwd}, #{realName}, #{userType}, #{userBelong}, #{salt}, #{isClazz})
+    </insert>
+
+    <update id="updatePwdByUserId">
+        update user
+        set `user_pwd` = #{newPwd}
+        where `id` = #{userId}
+    </update>
+
+    <select id="selectByUserBelong" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <include refid="selectUserDO"/>
+        where `user_belong` = #{userBelong}
+    </select>
+
+    <select id="selectByUserTypeAndUserBelong" resultMap="BaseResultMap">
+        <include refid="selectUserDO"/>
+        where `user_type` = #{userType} and `user_belong` = #{userBelong}
+    </select>
+
+    <update id="updatePwdByUserNameAndRealNameAndUserBelong">
+        update user
+        set user_pwd = #{newPwd}
+        where user_name = #{userName}
+          and real_name = #{realName}
+          and user_belong = #{userBelong}
+    </update>
+    <select id="selectRealNameById" parameterType="java.lang.Integer" resultType="java.lang.String">
+        select u.real_name
+        from user u
+        where u.id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectByUserType" resultType="com.vtmer.microteachingquality.model.entity.User"
+            resultMap="BaseResultMap">
+        select id,
+               user_name,
+               user_pwd,
+               real_name,
+               user_type,
+               user_belong,
+               salt,
+               is_clazz,
+               create_time,
+               update_time
+        from user
+        where user_type = #{userType}
+    </select>
+</mapper>

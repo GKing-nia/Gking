@@ -1,0 +1,59 @@
+server:
+  # 端口设置
+  port: 8080
+
+# Spring配置
+spring:
+  profiles: test
+  datasource:
+    # 连接数据库的url
+    url: jdbc:mysql://119.91.200.72:3306/teach_quality?serverTimezone=Asia/Shanghai
+    # 连接数据库的账号
+    username: root
+    # 连接数据库的密码
+    password: vtmer2020
+  redis:
+    host: 119.91.200.72
+    port: 6379
+    # redis密码，默认为空
+    password: cph
+    database: 1
+  # 开启热部署
+  devtools:
+    restart:
+      enabled: true
+
+# 日志配置
+logging:
+  # 日志输出级别
+  level:
+    ROOT: info
+
+# 自评报告
+report:
+  template:
+    path: /users/eeatem/desktop/pt/data
+  path: /users/eeatem/desktop/pt/data
+
+coursereport:
+  template:
+    path: /home/java/pt/coursereport/template
+  path: /home/java/pt/coursereport/manager
+
+# 课程自评报告
+clazz:
+  template:
+    path: /home/java/pt/clazz/template
+  path: /home/java/pt/clazz/template/annotation
+
+#专业归档文件路径
+major:
+  archive:
+    template: /home/java/pt/majorarchive/tempate
+    file: /home/java/pt/majorarchive/file
+
+# Swagger
+swagger:
+  # host
+  host: localhost:8080
+  enable: true

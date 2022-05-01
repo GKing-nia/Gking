@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.EvaluationOptionMapper">
+
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.EvaluationOption">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="college_sort" jdbcType="VARCHAR" property="collegeSort"/>
+        <result column="first_target" jdbcType="VARCHAR" property="firstTarget"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="details" jdbcType="LONGVARCHAR" property="details"/>
+    </resultMap>
+
+    <sql id="selectEvaluationOptionDO">
+        select eo.id,
+               eo.college_sort,
+               eo.first_target,
+               eo.details,
+               eo.create_time,
+               eo.update_time
+        from evaluation_option eo
+    </sql>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from evaluation_option
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.vtmer.microteachingquality.model.entity.EvaluationOption">
+        insert into evaluation_option (id, college_sort, first_target,
+                                       create_time, update_time, details)
+        values (#{id,jdbcType=INTEGER}, #{collegeSort,jdbcType=VARCHAR}, #{firstTarget,jdbcType=VARCHAR},
+                #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{details,jdbcType=LONGVARCHAR})
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.EvaluationOption">
+        update evaluation_option
+        set college_sort = #{collegeSort,jdbcType=VARCHAR},
+            first_target = #{firstTarget,jdbcType=VARCHAR},
+            create_time  = #{createTime,jdbcType=TIMESTAMP},
+            update_time  = #{updateTime,jdbcType=TIMESTAMP},
+            details      = #{details,jdbcType=LONGVARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select id, college_sort, first_target, create_time, update_time, details
+        from evaluation_option
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, college_sort, first_target, create_time, update_time, details
+        from evaluation_option
+    </select>
+
+    <select id="selectByFirstTarget" resultMap="BaseResultMap">
+        <include refid="selectEvaluationOptionDO"/>
+        where first_target = #{firstTarget}
+    </select>
+
+    <select id="selectByCollageSort" resultMap="BaseResultMap">
+        select id, college_sort, first_target, details, create_time, update_time
+        from evaluation_option
+        where college_sort = #{collegeSort}
+    </select>
+</mapper>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.MajorArchiveManageInfoMapper">
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="major_id" jdbcType="INTEGER" property="majorId"/>
+        <result column="batch_name" jdbcType="VARCHAR" property="batchName"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, user_id, major_id, batch_name, `status`
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from major_archive_manage_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectByUserIdAndMajorIdAndBatchName"
+            resultType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from major_archive_manage_info where user_id = #{userId} and major_id = #{majorId} and batch_name = #{batchName}
+    </select>
+    <select id="selectByMajorIdAndBatchName"
+            resultType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from major_archive_manage_info where batch_name = #{batchName} and major_id = #{majorId}
+    </select>
+    <select id="selectByMajorId" resultType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo"
+            resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from major_archive_manage_info where major_id = #{majorId}
+    </select>
+    <select id="selectByUserId" resultType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo"
+            resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from major_archive_manage_info where user_id = #{userId}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from major_archive_manage_info
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo" useGeneratedKeys="true">
+        insert into major_archive_manage_info (user_id, major_id, batch_name,
+                                               `status`)
+        values (#{userId,jdbcType=INTEGER}, #{majorId,jdbcType=INTEGER}, #{batchName,jdbcType=VARCHAR},
+                #{status,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo" useGeneratedKeys="true">
+        insert into major_archive_manage_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="majorId != null">
+                major_id,
+            </if>
+            <if test="batchName != null">
+                batch_name,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="majorId != null">
+                #{majorId,jdbcType=INTEGER},
+            </if>
+            <if test="batchName != null">
+                #{batchName,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo">
+        update major_archive_manage_info
+        <set>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="majorId != null">
+                major_id = #{majorId,jdbcType=INTEGER},
+            </if>
+            <if test="batchName != null">
+                batch_name = #{batchName,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.MajorArchiveManageInfo">
+        update major_archive_manage_info
+        set user_id    = #{userId,jdbcType=INTEGER},
+            major_id   = #{majorId,jdbcType=INTEGER},
+            batch_name = #{batchName,jdbcType=VARCHAR},
+            `status`   = #{status,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,24 @@
+server:
+  port: 9401
+spring:
+  application:
+    name: micro-oauth2-auth
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://119.91.200.72:8848
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  redis:
+    database: 0
+    port: 6379
+    host: 119.91.200.72
+    password: cph
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

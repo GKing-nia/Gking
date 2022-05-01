@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64801c13-8b09-4fa3-a072-c86ba96084c2" name="Changes" comment="基本功能完成">
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/.idea/AlgorithmNotes-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/1.1 课前预习（课件+源码）/1.1 课前预习（课件+源码）.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/2.1 课前预习（课件+源码）/2.1 课前预习（课件+源码）.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/3.1 课前预习（课件+源码）/基础入门班第三课代码/class03/Code01_CountSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/3.1 课前预习（课件+源码）/基础入门班第三课代码/class03/Code02_RadixSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/3.1 课前预习（课件+源码）/基础入门班第三课代码/class03/Code03_Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code01_HashAndTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code02_ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code03_PrintCommonPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code04_IsPalindromeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code05_SmallerEqualBigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code06_CopyListWithRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/4.1 课前预习（课件+源码）/基础入门班第四课代码/class04/Code07_FindFirstIntersectNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code01_PreInPosTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code02_PrintBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code03_TreeMaxWidth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code04_IsBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code05_IsCBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code06_IsBalancedTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code07_LowestCommonAncestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code08_SuccessorNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code09_SerializeAndReconstructTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/5.1 课前预习（课件+源码）/基础入门班第五课代码/class05/Code10_PaperFolding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code01_BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code02_DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code03_TopologySort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code04_Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code05_Prim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Code06_Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/GraphGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/6.1 课前预习（课件+源码）/基础入门班第六课代码/class06/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code01_TrieTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code02_LowestLexicography.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code03_LessMoneySplitGold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code04_BestArrange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code05_IPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/7.1 课前预习（课件+源码）/基础入门班第七课代码/class07/Code06_MadianQuick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code01_Hanoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code02_PrintAllSubsquences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code03_PrintAllPermutations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code04_ReverseStackUsingRecursive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code06_ConvertToLetterString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code07_Knapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code08_CardsInLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/1.基础/8.1 课前预习（课件+源码）/基础入门班第八课代码/class08/Code09_NQueens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/1.1 课前预习（课件+源码）/提升班第一课代码/class01/Code01_HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/1.1 课前预习（课件+源码）/提升班第一课代码/class01/Code02_RandomPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/1.1 课前预习（课件+源码）/提升班第一课代码/class01/Code03_Islands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/1.1 课前预习（课件+源码）/提升班第一课代码/class01/Code04_UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/AVLTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/AbstractBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/AbstractSelfBalancingBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/Code01_SizeBalancedTreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/Code02_SizeBalancedTreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/Code03_SkipListMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/2.1 课前预习（课件+源码）/提升班第二课代码/class02/RedBlackTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/3.1 课前预习（课件+源码）/提升班第三课代码/class03/Code01_KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/3.1 课前预习（课件+源码）/提升班第三课代码/class03/Code02_Manacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/4.1 课前预习（课件+源码）/提升班第四课代码/class04/Code01_SlidingWindowMaxArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/4.1 课前预习（课件+源码）/提升班第四课代码/class04/Code02_MonotonousStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/4.1 课前预习（课件+源码）/提升班第四课代码/class04/Code03_AllTimesMinToMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/5.1 课前预习（课件+源码）/提升班第五课代码/class05/Code01_MorrisTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/5.1 课前预习（课件+源码）/提升班第五课代码/class05/Code02_MaxDistanceInTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/5.1 课前预习（课件+源码）/提升班第五课代码/class05/Code03_MaxHappy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/6.1 课前预习（课件+源码）/提升班第六课代码/class06/Code01_GetMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/6.1 课前预习（课件+源码）/提升班第六课代码/class06/Code02_Power.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/6.1 课前预习（课件+源码）/提升班第六课代码/class06/Code03_AddMinusMultiDivideByBit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/7.1 课前预习（课件+源码）/提升班第七课代码/class07/Code01_RobotWalk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/7.1 课前预习（课件+源码）/提升班第七课代码/class07/Code02_CoinsMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/7.1 课前预习（课件+源码）/提升班第七课代码/class07/Code03_CardsInLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/7.1 课前预习（课件+源码）/提升班第七课代码/class07/Code04_HorseJump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/7.1 课前预习（课件+源码）/提升班第七课代码/class07/Code05_BobDie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/2.基础提升班/8.1 课前预习（课件+源码）/提升班第八课代码/class08/Code01_MinPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem01_CordCoverMaxPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem02_AppleMinBags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem03_ColorLeftRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem04_MaxOneBorderSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem05_Rand5ToRand7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem06_UniqueBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/1.1 课前预习（课件+源码）/中级班第一课代码/算法中级班第一课代码/Problem07_NeedParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem01_SubvalueEqualK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem02_MagicOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem03_NumToStringWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem04_ParenthesesDeep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem05_StackSortStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem06_Eat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/2.1 课前预习（课件+源码）/中级班第二课代码/算法中级班第二课代码/Problem07_MaxSumInTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem01_PackingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem02_ZigZagPrintMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem03_RotateMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem04_PrintMatrixSpiralOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem05_FindNumInSortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem06_SplitNbySM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/3.1 课前预习（课件+源码）/中级班第三课代码/class03/Problem07_TopKTimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem01_DogCatQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem02_GetMinStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem03_StackAndQueueConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem04_MinPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem05_WaterProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem06_MaxABSBetweenLeftAndRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/4.1 课前预习（课件+源码）/中级班第四课代码/class04/Problem07_IsRotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem01_ZeroLeftOneStringNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem02_DeleteWood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem03_NearMultiple4Times.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem04_ConvertStringToInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem05_TopKTimesRealTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem06_CompriseWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/5.1 课前预习（课件+源码）/中级班第五课代码/class05/Problem07_ChooseWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem01_GetFolderTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem02_BSTtoDoubleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem03_BiggestSubBSTInTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem04_PreAndInArrayToPosArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem05_Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem06_SubArrayMaxSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/6.1 课前预习（课件+源码）/中级班第六课代码/class06/Problem07_SubMatrixMaxSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem01_ChineseExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem01_EnglishExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem02_PrintNoInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem03_3times.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem04_Kiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem05_CompleteTreeNodeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem06_MaxRevenue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/7.1 课前预习（课件+源码）/中级班第七课代码/class07/Problem07_EnvelopesProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem01_MostEOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem02_ExpressionNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem03_StringToKth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem04_LongestNoRepeatSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem05_EditCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem06_RemoveDuplicateLettersLessLexi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/3.中级/8.1 课前预习（课件+源码）/中级班第八课代码/class08/Problem07_WordMinPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/1.1 课前预习（课件+源码）/高级班第一课代码/算法高级班第一课代码/Problem01_MaxGap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/1.1 课前预习（课件+源码）/高级班第一课代码/算法高级班第一课代码/Problem02_MostEOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/1.1 课前预习（课件+源码）/高级班第一课代码/算法高级班第一课代码/Problem03_MoneyWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/1.1 课前预习（课件+源码）/高级班第一课代码/算法高级班第一课代码/Problem04_JosephusProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/1.1 课前预习（课件+源码）/高级班第一课代码/算法高级班第一课代码/Problem05_FindKthMinNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/2.1 课前预习（课件+源码）/高级班第二课代码/算法高级班第二课代码/Problem01_BuildingOutline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/2.1 课前预习（课件+源码）/高级班第二课代码/算法高级班第二课代码/Problem02_LongestSumSubArrayLengthInPositiveArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/2.1 课前预习（课件+源码）/高级班第二课代码/算法高级班第二课代码/Problem03_LongestLessSumSubArrayLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/2.1 课前预习（课件+源码）/高级班第二课代码/算法高级班第二课代码/Problem04_Nim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/2.1 课前预习（课件+源码）/高级班第二课代码/算法高级班第二课代码/Problem05_NumberAndString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/3.1 课前预习（课件+源码）/高级班第三课代码/class03/Problem01_MaxPathSumInBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/3.1 课前预习（课件+源码）/高级班第三课代码/class03/Problem02_SnakeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/3.1 课前预习（课件+源码）/高级班第三课代码/class03/Problem03_ExpressionCompute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/3.1 课前预习（课件+源码）/高级班第三课代码/class03/Problem04_LCSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/3.1 课前预习（课件+源码）/高级班第三课代码/class03/Problem05_LCSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem01_MinBoat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem02_PalindromeSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem03_PalindromeMinAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem04_PalindromeMinCut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem05_PalindromeWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/4.1 课前预习（课件+源码）/高级班第四课代码/class04/Problem06_BFPRT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/5.1 课前预习（课件+源码）/高级班第五课代码/class05/Problem01_CoinsWay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/5.1 课前预习（课件+源码）/高级班第五课代码/class05/Problem02_SplitNumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/5.1 课前预习（课件+源码）/高级班第五课代码/class05/Problem03_BiggestBSTTopologyInTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/5.1 课前预习（课件+源码）/高级班第五课代码/class05/Problem04_ShuffleProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/6.1 课前预习（课件+源码）/高级班第六课代码/class06/Problem01_SDEandPM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/6.1 课前预习（课件+源码）/高级班第六课代码/class06/Problem02_RecoverBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/6.1 课前预习（课件+源码）/高级班第六课代码/class06/Problem03_VisibleMountains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/6.1 课前预习（课件+源码）/高级班第六课代码/class06/Problem04_CoverMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/7.1 课前预习（课件+源码）/高级班第七课代码/class07/Problem01_RegularExpressionMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/7.1 课前预习（课件+源码）/高级班第七课代码/class07/Problem02_MaxEOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/7.1 课前预习（课件+源码）/高级班第七课代码/class07/Problem03_BurstBalloons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/7.1 课前预习（课件+源码）/高级班第七课代码/class07/Problem04_HanoiProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/8.1 课前预习（课件+源码）/高级班第八课代码/class08/Problem01_ScrambleString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/8.1 课前预习（课件+源码）/高级班第八课代码/class08/Problem02_MinWindowLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/8.1 课前预习（课件+源码）/高级班第八课代码/class08/Problem03_LFU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmNotes-master/AlgorithmNotes-master/左神算法资料/4.高级/8.1 课前预习（课件+源码）/高级班第八课代码/class08/Problem04_GasStations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/.idea/Algorithm_Basic-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day03_归并排序与随机快排/Day03_归并排序与随机快排.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day04_比较器和堆/Day04_比较器和堆.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day05_trie和桶排序和排序总结/Day05_trie和桶排序和排序总结.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day06_链表/Day06_链表.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day07_二叉树/Day07_二叉树.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/Day08_二叉树的递归解法/Day08_二叉树的递归解法.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm_Basic-master/Algorithm_Basic-master/算法与数据结构基础.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../github/zady-micro-master/.idea/zady-micro-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-oauth2-auth/src/main/java/com/hung/microoauth2auth/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-oauth2-auth/src/main/resources/config/mail.setting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-oauth2-commons/src/main/java/com/hung/microoauth2commons/commonutils/utils/RedisConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-oauth2-commons/src/main/java/com/hung/microoauth2commons/commonutils/utils/RegexPatterns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-oauth2-commons/src/main/java/com/hung/microoauth2commons/commonutils/utils/RegexUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/controller/NotifyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/mapper/NotifyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/model/dto/insert/ForgetPwdDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/model/dto/insert/UserInsertDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/model/dto/result/NotificationVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/model/dto/result/ScrollResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/model/entity/Notify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/service/NotifyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeachQuality-develop/micro-teaching-quality/src/main/java/com/vtmer/microteachingquality/service/impl/NotifyServiceImpl.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28SpA0PN7aHS1FsyhNDNFxTORz4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gking\Desktop\TeachQuality-develop\TeachQuality-develop\micro-oauth2-auth\src\main\resources" />
+      <recent name="C:\Users\Gking\Desktop\TeachQuality-develop\TeachQuality-develop\micro-oauth2-auth\src\main\java\com\hung\microoauth2auth\entity" />
+      <recent name="C:\Users\Gking\Desktop\TeachQuality-develop\TeachQuality-develop\micro-oauth2-commons\src\main\java\com\hung\microoauth2commons\commonutils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vtmer.microteachingquality.controller" />
+      <recent name="com.vtmer.microteachingquality.model.dto" />
+      <recent name="com.vtmer.microteachingquality.util" />
+      <recent name="com.vtmer.microteachingquality.model.dto.result" />
+      <recent name="com.vtmer.microteachingquality.model.vo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MicroOauth2AuthApplication">
+    <configuration name="MicroOauth2AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-oauth2-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hung.microoauth2auth.MicroOauth2AuthApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroOauth2GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-oauth2-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hung.microoauth2gateway.MicroOauth2GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroTeachingQualityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-teaching-quality" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vtmer.microteachingquality.MicroTeachingQualityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64801c13-8b09-4fa3-a072-c86ba96084c2" name="Changes" comment="" />
+      <created>1651219694986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651219694986</updated>
+      <workItem from="1651219696169" duration="2625000" />
+      <workItem from="1651245162882" duration="48000" />
+      <workItem from="1651297446784" duration="4092000" />
+      <workItem from="1651381092024" duration="26124000" />
+      <workItem from="1651416700740" duration="22000" />
+      <workItem from="1651416864009" duration="43000" />
+    </task>
+    <task id="LOCAL-00001" summary="基本功能完成">
+      <created>1651416149244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651416149244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="基本功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本功能完成" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

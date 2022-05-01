@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.OptionRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.OptionRecord">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="major_id" jdbcType="INTEGER" property="majorId"/>
+        <result column="option_id" jdbcType="INTEGER" property="optionId"/>
+        <result column="mark" jdbcType="VARCHAR" property="mark"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <sql id="selectOptionRecordDO">
+        select o.id,
+               o.user_id,
+               o.major_id,
+               o.option_id,
+               o.mark,
+               o.create_time,
+               o.update_time
+        from option_record o
+    </sql>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from option_record
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.vtmer.microteachingquality.model.entity.OptionRecord">
+        insert into option_record (user_id, major_id, option_id, mark, create_time)
+        values (#{userId,jdbcType=INTEGER}, #{majorId,jdbcType=INTEGER}, #{optionId,jdbcType=INTEGER},
+                #{mark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.OptionRecord">
+        update option_record
+        set user_id     = #{userId,jdbcType=INTEGER},
+            option_id   = #{optionId,jdbcType=INTEGER},
+            major_id    =#{majorId,jdbcType=INTEGER},
+            mark        = #{mark,jdbcType=VARCHAR},
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+            update_time = #{updateTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select id, user_id, major_id, option_id, mark, create_time, update_time
+        from option_record
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, user_id, major_id, option_id, mark, create_time, update_time
+        from option_record
+    </select>
+
+    <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <include refid="selectOptionRecordDO"/>
+        where user_id = #{userId}
+        and create_time = (select max(create_time) from option_record where user_id = #{userId})
+    </select>
+    <select id="selectByUserIdAndMajorId" resultType="com.vtmer.microteachingquality.model.entity.OptionRecord"
+            resultMap="BaseResultMap">
+        <include refid="selectOptionRecordDO"/>
+        where user_id = #{userId} and major_id = #{majorId}
+    </select>
+
+</mapper>

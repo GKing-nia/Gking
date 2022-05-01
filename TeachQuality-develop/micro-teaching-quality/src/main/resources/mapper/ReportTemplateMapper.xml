@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.ReportTemplateMapper">
+
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.ReportTemplate">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="college" jdbcType="VARCHAR" property="college"/>
+        <result column="major" jdbcType="VARCHAR" property="major"/>
+        <result column="path" jdbcType="VARCHAR" property="path"/>
+        <result column="url" jdbcType="VARCHAR" property="url"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <sql id="selectReportTemplateDO">
+        select rt.id,
+               rt.user_id,
+               rt.college,
+               rt.major,
+               rt.path,
+               rt.url,
+               rt.create_time,
+               rt.update_time
+        from report_template rt
+    </sql>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from report_template
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.vtmer.microteachingquality.model.entity.ReportTemplate">
+        insert into report_template (id, user_id, college,
+                                     major, path, url, create_time,
+                                     update_time)
+        values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{college,jdbcType=VARCHAR},
+                #{major,jdbcType=VARCHAR}, #{path,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR},
+                #{createTime,jdbcType=TIMESTAMP},
+                #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.ReportTemplate">
+        update report_template
+        set user_id     = #{userId,jdbcType=INTEGER},
+            college     = #{college,jdbcType=VARCHAR},
+            major       = #{major,jdbcType=VARCHAR},
+            path        = #{path,jdbcType=VARCHAR},
+            url         = #{url,jdbcType=VARCHAR},
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+            update_time = #{updateTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select id,
+               user_id,
+               college,
+               major,
+               path,
+               url,
+               create_time,
+               update_time
+        from report_template
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id,
+               user_id,
+               college,
+               major,
+               path,
+               url,
+               create_time,
+               update_time
+        from report_template
+    </select>
+
+    <insert id="insertReportTemplate" parameterType="com.vtmer.microteachingquality.model.entity.ReportTemplate">
+        insert into report_template (user_id, college, major,
+                                     path, url)
+        values (#{userId}, #{college}, #{major},
+                #{path}, #{url})
+    </insert>
+
+    <select id="selectByMajor" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <include refid="selectReportTemplateDO"/>
+        where major = #{major}
+    </select>
+
+    <delete id="deleteByMajor" parameterType="java.lang.String">
+        delete
+        from report_template
+        where major = #{major}
+    </delete>
+
+</mapper>

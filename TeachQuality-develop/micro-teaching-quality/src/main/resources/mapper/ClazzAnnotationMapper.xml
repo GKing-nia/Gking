@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.ClazzAnnotationMapper">
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.ClazzAnnotation">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="info" jdbcType="VARCHAR" property="info"/>
+        <result column="annotation" jdbcType="VARCHAR" property="annotation"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, info, annotation
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from clazz_annotation
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, info, annotation
+        from clazz_annotation
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from clazz_annotation
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzAnnotation" useGeneratedKeys="true">
+        insert into clazz_annotation (info, annotation)
+        values (#{info,jdbcType=VARCHAR}, #{annotation,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzAnnotation" useGeneratedKeys="true">
+        insert into clazz_annotation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="info != null">
+                info,
+            </if>
+            <if test="annotation != null">
+                annotation,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="info != null">
+                #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="annotation != null">
+                #{annotation,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.vtmer.microteachingquality.model.entity.ClazzAnnotation">
+        update clazz_annotation
+        <set>
+            <if test="info != null">
+                info = #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="annotation != null">
+                annotation = #{annotation,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.ClazzAnnotation">
+        update clazz_annotation
+        set info       = #{info,jdbcType=VARCHAR},
+            annotation = #{annotation,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

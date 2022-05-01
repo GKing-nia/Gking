@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.PermissionMapper">
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.Permission">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="permi_name" jdbcType="VARCHAR" property="permiName"/>
+        <result column="url" jdbcType="VARCHAR" property="url"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from permission
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.vtmer.microteachingquality.model.entity.Permission">
+        insert into permission (id, permi_name, url,
+                                create_time, update_time)
+        values (#{id,jdbcType=INTEGER}, #{permiName,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR},
+                #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.Permission">
+        update permission
+        set permi_name  = #{permiName,jdbcType=VARCHAR},
+            url         = #{url,jdbcType=VARCHAR},
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+            update_time = #{updateTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select id, permi_name, url, create_time, update_time
+        from permission
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, permi_name, url, create_time, update_time
+        from permission
+    </select>
+</mapper>

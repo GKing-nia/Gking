@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vtmer.microteachingquality.mapper.MasterEvaluationMapper">
+
+    <resultMap id="BaseResultMap" type="com.vtmer.microteachingquality.model.entity.MasterEvaluation">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="major_id" jdbcType="INTEGER" property="majorId"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="opinion" jdbcType="LONGVARCHAR" property="opinion"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+    </resultMap>
+
+    <sql id="selectMasterEvaluationDO">
+        select me.id,
+               me.user_id,
+               me.major_id,
+               me.opinion,
+               me.status,
+               me.create_time,
+               me.update_time
+        from master_evaluation me
+    </sql>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from master_evaluation
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insert" parameterType="com.vtmer.microteachingquality.model.entity.MasterEvaluation">
+        insert into master_evaluation (user_id, major_id, opinion, status)
+        values (#{userId,jdbcType=INTEGER}, #{majorId,jdbcType=INTEGER}, #{opinion,jdbcType=LONGVARCHAR},
+                #{status,jdbcType=VARCHAR})
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.vtmer.microteachingquality.model.entity.MasterEvaluation">
+        update master_evaluation
+        set user_id     = #{userId,jdbcType=INTEGER},
+            major_id    =#{majorId,jdbcType=INTEGER},
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+            update_time = #{updateTime,jdbcType=TIMESTAMP},
+            opinion     = #{opinion,jdbcType=LONGVARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select id, user_id, major_id, create_time, update_time, opinion
+        from master_evaluation
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id, user_id, major_id, create_time, update_time, opinion
+        from master_evaluation
+    </select>
+
+    <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <include refid="selectMasterEvaluationDO"/>
+        where user_id = #{userId}
+        order by id DESC
+    </select>
+    <select id="selectByUserIdAndMajorId" resultType="com.vtmer.microteachingquality.model.entity.MasterEvaluation"
+            resultMap="BaseResultMap">
+        select id, user_id, major_id, opinion, status, create_time, update_time
+        from master_evaluation
+        where user_id = #{userId}
+          and major_id = #{majorId}
+    </select>
+
+    <update id="updateStatusByUserId">
+        update master_evaluation
+        set status = #{status}
+        where user_id = #{userId}
+    </update>
+    <update id="updateStatusByUserIdAndMajorId">
+        update master_evaluation
+        set status = #{status}
+        where user_id = #{userId}
+          and major_id = #{majorId}
+    </update>
+
+</mapper>
